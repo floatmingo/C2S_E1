@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>C2S Exercise</title>
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+    crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+    integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+    crossorigin=""></script>
+  <script src="https://cdn.jsdelivr.net/npm/@turf/turf@5/turf.min.js"></script>
+  <style>
+    html {
+        min-height:100%; /* make sure it is at least as tall as the viewport */
+        position:relative;
+    }
+
+    body {
+      height: 100%;
+    }
+
+    #themap {
+      position:absolute;
+      top:0;
+      bottom:0;
+      left:0;
+      right:0;
+      overflow:hidden;
+      z-index:-1;
+    }
+
+    .info {
+      padding: 10px;
+      font-size: 18px;
+      background: white;
+      text-align: right;
+      border-radius: 5px;
+    }
+  </style>
+
+  <script src="index.js"></script>
+</head>
+
+<body>
+    <div id="themap"></div>
+</body>
+
+</html>
